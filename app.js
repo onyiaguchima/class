@@ -4,7 +4,18 @@ class Cat {
         this.age = age
     }
     eat(){
-        return `${this.name}`
+        return `${this.name} is eating bones`
     }
 }
-console.log("class is running")
+
+class Dog extends Cat{
+    constructor(name, age, livesleft = 10){
+        // this.name = name;
+        // this.age = age;
+        super(name,age);
+    }
+}
+
+const naijadog = new Dog("bingo", 23);
+
+console.log(naijadog);
