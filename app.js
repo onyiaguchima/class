@@ -4,7 +4,7 @@ class Cat {
         this.age = age
     }
     eat(){
-        return `${this.name} is eating bones`
+        return `${this.name} is eating bones`;
     }
 }
 
